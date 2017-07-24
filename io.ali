@@ -1,0 +1,90 @@
+V "GNAT Lib v2016"
+A -gnatA
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U io%b			io.adb			b677140f NE OO PK IU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W pump%s		pump.adb		pump.ali
+W system%s		system.ads		system.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.img_bool%s	s-imgboo.adb		s-imgboo.ali
+W system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+W system.img_real%s	s-imgrea.adb		s-imgrea.ali
+
+U io%s			io.ads			13e12428 EE NE OO PK IU
+W pump%s		pump.adb		pump.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D io.ads		20170503234926 70b6a2e6 io%s
+D io.adb		20170503235008 9dfbc5f3 io%b
+D pump.ads		20170502004922 635786ce pump%s
+D system.ads		20160516092930 2da59038 system%s
+D s-conca2.ads		20160516092930 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20160516092932 0b705ca5 system.concat_3%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-imgboo.ads		20160516092926 f5d971eb system.img_bool%s
+D s-imenne.ads		20160516092928 614c06c0 system.img_enum_new%s
+D s-imgrea.ads		20160516092926 c7a851e2 system.img_real%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 11|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 11|1w10 1r27
+166U14*New_Line 11|7s10
+263U14*Put_Line 11|9s10 15s7 20s7 25s7 30s7 35s7
+X 10 io.ads
+2K9*IO 22l5 22e7 11|3b14 38l5 38t7
+5U14*print 5>20 11|4b14 11l8 11t13
+5a20 s{string} 11|4b20 6r10 9r19
+8U14*print_float 8>26 8>40 11|13b14 16l8 16t19
+8a26 s1{string} 11|13b26 15r16
+8f40 s2{12|6F9} 11|13b40 15r21
+11U14*print_state 11>26 11>40 11|18b14 21l8 21t19
+11a26 s1{string} 11|18b26 20r16
+11e40 s2{12|8E9} 11|18b40 20r25
+14U14*print_nozzle 14>27 14>41 11|23b14 26l8 26t20
+14a27 s1{string} 11|23b27 25r16
+14e41 s2{12|9E9} 11|23b41 25r26
+17U14*print_fuel_types 17>31 17>45 11|28b14 31l8 31t24
+17a31 s1{string} 11|28b31 30r16
+17e45 s2{12|7E9} 11|28b45 30r21
+20U14*print_boolean 20>28 20>42 11|33b14 36l8 36t21
+20a28 s1{string} 11|33b28 35r16
+20b42 s2{boolean} 11|33b42 35r21
+X 12 pump.ads
+4K9*pump 10|1w6 8r43 11r43 14r44 17r48 11|2w6 13r43 18r43 23r44 28r48 12|70e9
+6F9*float_number<short_float> 10|8r48 11|13r48
+7E9*fuel_types 10|17r53 11|28r53 12|7e39
+8E9*state 10|11r48 11|18r48 12|8e49
+9E9*nozzle 10|14r49 11|23r49 12|9e61
+

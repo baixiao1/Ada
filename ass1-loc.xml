@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>D:\study\Master\2017Trimester 1\SWEN421\Ass2\ass2.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\study\Master\2017Trimester 1\SWEN421\assignment 1\Ass1\ass1.gpr</vfs_project>
+      <vfs_file>D:\study\Master\2017Trimester 1\SWEN421\assignment 1\Ass1\unit.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>D:\study\Master\2017Trimester 1\SWEN421\assignment 1\Ass1\ass1.gpr</vfs_project>
+      <vfs_file>D:\study\Master\2017Trimester 1\SWEN421\assignment 1\Ass1\pump.ads</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

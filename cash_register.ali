@@ -1,0 +1,83 @@
+V "GNAT Lib v2016"
+A -gnatA
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U cash_register%b	cash_register.adb	be7fe332 NE OO PK IL
+W io%s			io.adb			io.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+
+U cash_register%s	cash_register.ads	40bf5750 EE NE OO PK IL
+W pump%s		pump.adb		pump.ali
+W unit%s		unit.adb		unit.ali
+
+D cash_register.ads	20170502004238 5a7d7586 cash_register%s
+D cash_register.adb	20170502004302 94b43452 cash_register%b
+D io.ads		20170503234926 70b6a2e6 io%s
+D pump.ads		20170502004922 635786ce pump%s
+D system.ads		20160516092930 2da59038 system%s
+D s-conca2.ads		20160516092930 02a0d7d0 system.concat_2%s
+D unit.ads		20170502002154 7995a418 unit%s
+X 1 cash_register.ads
+4K9*cash_register 36l5 36e18 2|3b14 53l5 53t18
+8A12*unit_id{string}<integer>
+11R9*pump_unit_id 16e14 20r17 2|43r19
+12a7*id{7|10A12} 2|18r55 21r36 46m18
+13f7*pay{4|6F9} 2|25m35 47m18
+14f7*fuel_amount{4|6F9} 2|26m35 48m18
+15e7*fuel{4|7E9} 2|49m18
+19R9*cash_register 21e14 24r18
+20r10*unit1{11R9} 2|18r49 21r30 25m29 26m29 50m20
+24r4*cashregister{19R9} 28r37 29r47 30r23 35r23 2|18r36 21r17 25m16 26m16
+. 50m7
+27U14*payment 27=22 27=55 27>83 2|6b14 39l8 39t15
+27r22 pumpunit{7|15R9} 28r23 29r37 30r41 2|6b22 13r25 14r28 15r10 21r56 29m33
+. 30m37 31m29 35r29
+27r55 pump_num{4|17R9} 29r23 2|6b55 27m31 28m37
+27f83 amount{4|6F9} 28r50 29r60 30r50 2|6b83 20r41 22r16 23r25
+33U14*pump_info 33>25 2|41b14 52l8 52t17
+33r25 pumpunit{7|15R9} 35r39 2|41b25 45r27 46r34 48r52 49r38
+X 2 cash_register.adb
+7a7 id{7|10A12} 13m7 21r13
+8f7 money{4|6F9} 14m7 19r37 22r24 23r32
+9f7 charge{4|6F9} 23m16 24r48
+42f7 money{4|6F9} 45m7 47r23
+43r7 pumpunitid{1|11R9} 46m7 47m7 48m7 49m7 50r27
+X 3 io.ads
+2K9*IO 2|1w6 1r14 3|22e7
+5U14*print 2|16s10 18s10 33s16 36s13 51s7
+8U14*print_float 2|19s10 20s10 24s16
+X 4 pump.ads
+4K9*pump 1|2w6 13r12 14r20 15r13 27r72 27r94 2|6r72 6r94 8r14 9r15 10r20
+. 11r20 15r35 27r16 27r40 28r16 42r14 4|70e9
+6F9*float_number<short_float> 1|13r17 14r25 27r99 2|6r99 8r19 9r20 11r25
+. 42r19
+7E9*fuel_types 1|15r18 4|7e39
+8E9*state 2|10r25 27r45 4|8e49
+8n41*Waiting{8E9} 2|15r40
+17R9*pump 1|27r77 2|6r77 4|24e14
+31U14*set_state 2|27s21
+44U14*set_fuel_amount 2|28s21
+X 7 unit.ads
+3K9*unit 1|1w6 12r11 27r39 33r38 2|6r39 7r11 13r13 14r15 21r43 29r16 30r16
+. 31r16 35r16 41r38 45r14 46r22 48r31 49r24 7|132e9
+10A12*unit_id{string}<integer> 1|12r16 2|7r16
+15R9*pump_unit 1|27r44 33r43 2|6r44 41r43 7|27e14
+22e7*current_state{4|8E9} 2|15r19
+43V13*get_id{10A12} 2|13s18 46s27
+46V13*get_pay{4|6F9} 2|14s20 21s48 35s21 45s19
+49V13*get_fuel_amount{4|6F9} 2|48s36
+52V13*get_fuel{4|7E9} 2|49s29
+73U14*set_is_paid 2|29s21
+76U14*set_pay 2|31s21
+82U14*set_fuel_amount 2|30s21
+

@@ -1,0 +1,80 @@
+{
+  "spark": [
+    {
+      "name": "IO.print",
+      "sloc": [
+        {
+          "file": "io.ads",
+          "line": 5
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "IO.print_float",
+      "sloc": [
+        {
+          "file": "io.ads",
+          "line": 8
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "IO.print_state",
+      "sloc": [
+        {
+          "file": "io.ads",
+          "line": 11
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "IO.print_nozzle",
+      "sloc": [
+        {
+          "file": "io.ads",
+          "line": 14
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "IO.print_fuel_types",
+      "sloc": [
+        {
+          "file": "io.ads",
+          "line": 17
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "IO.print_boolean",
+      "sloc": [
+        {
+          "file": "io.ads",
+          "line": 20
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "IO",
+      "sloc": [
+        {
+          "file": "io.ads",
+          "line": 2
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+  ]
+}

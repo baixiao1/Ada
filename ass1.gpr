@@ -1,0 +1,6 @@
+project Ass1 is
+
+   for Main use ("main.adb");
+
+end Ass1;
+

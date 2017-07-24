@@ -1,0 +1,203 @@
+V "GNAT Lib v2016"
+A -gnatc
+P GP ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U pump%b		pump.adb		c98d9019 OO PK IL
+W io%s			io.adb			io.ali
+W pump%s		pump.adb		pump.ali
+W system%s		system.ads		system.ali
+
+U pump%s		pump.ads		635786ce EE OO PK IL
+
+D io.ads		20170503234926 70b6a2e6 io%s
+D pump.ads		20170502004922 635786ce pump%s
+D pump.adb		20170501235948 b93b32ff pump%b
+D system.ads		20160516092930 2da59038 system%s
+X 1 io.ads
+2K9*IO 22e7 3|2w6 2r14
+8U14*print_float 3|21s7 48s7
+11U14*print_state 3|9s7
+14U14*print_nozzle 3|15s7
+17U14*print_fuel_types 3|42s7
+X 2 pump.ads
+4K9*pump 70l5 70e9 3|1w6 3b14 77l5 77t9
+6F9*float_number<short_float> 12r14 21r19 22r19 37r65 44r64 50r57 53r49 56r49
+. 3|18r65 31r64 45r57 52r49 57r49
+7E9*fuel_types 7e39 13r23 18r64 23r17 23r29 47r63 59r53 3|36r63 62r53
+7n24*F91{7E9}
+7n28*F95{7E9}
+7n32*Diesel{7E9}
+8E9*state 8e49 19r19 19r26 31r62 65r49 3|6r62 72r49
+8n19*Base{8E9}
+8n25*Ready{8E9}
+8n32*Pumping{8E9}
+8n41*Waiting{8E9}
+9E9*nozzle 9e61 20r26 20r35 34r69 62r56 3|12r69 67r56
+9n20*Initial{9E9}
+9n29*Lift{9E9}
+9n35*Replace{9E9}
+9n44*Start{9E9}
+9n51*Stop{9E9}
+9n57*Pay{9E9}
+11R9*reservoir 14e14 18r23 3|37r11
+12f7*total{6F9} 18m35 3|20m31 26r34 27m34 27r67 40m9 59r38
+13e7*reservoir_type{7E9} 18m48 3|39m9 64r38
+17R9*pump 24e14 31r42 34r48 37r50 40r48 44r47 47r45 50r41 53r36 56r36 59r40
+. 62r43 65r36 3|6r42 12r48 18r50 24r48 31r47 36r45 45r41 52r36 57r36 62r40
+. 67r43 72r36
+18r7*reservoir_info{11R9} 3|20m16 26r19 27m19 27r52 41m16 59r23 64r23
+19e7*pump_state{8E9} 3|8m16 74r23
+20e7*pump_nozzle_state{9E9} 3|14m16 69r23
+21f7*fuel_amount{6F9} 3|33m16
+22f7*unit_price{6F9} 3|47m16 54r23
+23e7*fuel_type{7E9}
+31U14*set_state 31=24 31>48 3|6b14 10l8 10t17
+31r24 pump_num{17R9} 3|6b24 8m7
+31e48 pumpstate{8E9} 3|6b48 8r29 9r53
+34U14*set_nozzle_state 34=31 34>54 3|12b14 16l8 16t24
+34r31 pump_num{17R9} 3|12b31 14m7
+34e54 nozzlestate{9E9} 3|12b54 14r35 15r56
+37U14*set_reservoir_size 37=33 37>56 3|18b14 22l8 22t26
+37r33 pump_num{17R9} 3|18b33 20m7
+37f56 size{6F9} 3|18b56 20r39 21r49
+40U14*remove_reservoir 40=31 3|24b14 29l8 29t24
+40r31 pump_num{17R9} 41r28 3|24b31 26r10 27m10 27r43
+44U14*set_fuel_amount 44=30 44>53 3|31b14 34l8 34t23
+44r30 pump_num{17R9} 3|31b30 33m7
+44f53 amount{6F9} 3|31b53 33r31
+47U14*set_reservoir 47=28 47>51 3|36b14 43l8 43t21
+47r28 pump_num{17R9} 3|36b28 41m7
+47e51 fueltype{7E9} 3|36b51 39r25 42r43
+50U14*set_price 50=24 50>47 3|45b14 49l8 49t17
+50r24 pump_num{17R9} 3|45b24 47m7
+50f47 price{6F9} 3|45b47 47r28 48r42
+53V13*get_price{6F9} 53>23 3|52b13 55l8 55t17
+53r23 pump_num{17R9} 3|52b23 54r14
+56V13*get_total{6F9} 41s18 56>23 3|57b13 60l8 60t17
+56r23 pump_num{17R9} 3|57b23 59r14
+59V13*get_reservoir{7E9} 59>27 3|62b13 65l8 65t21
+59r27 pump_num{17R9} 3|62b27 64r14
+62V13*get_nozzle_state{9E9} 62>30 3|67b13 70l8 70t24
+62r30 pump_num{17R9} 3|67b30 69r14
+65V13*get_state{8E9} 65>23 3|72b13 75l8 75t17
+65r23 pump_num{17R9} 3|72b23 74r14
+X 3 pump.adb
+37r7 r{2|11R9} 39m7 40m7 41r32
+FD 1 io.ads
+FS .1 2K9 io
+FS .2 5U14 io__print
+FS .3 8U14 io__print_float
+FS .4 11U14 io__print_state
+FS .5 14U14 io__print_nozzle
+FS .6 17U14 io__print_fuel_types
+FS .7 20U14 io__print_boolean
+FD 2 pump.ads
+FS .1 4K9 pump
+FS .2 31U14 pump__set_state
+FS .3 34U14 pump__set_nozzle_state
+FS .4 37U14 pump__set_reservoir_size
+FS .5 40U14 pump__remove_reservoir
+FS .6 44U14 pump__set_fuel_amount
+FS .7 47U14 pump__set_reservoir
+FS .8 50U14 pump__set_price
+FS .9 53V13 pump__get_price
+FS .10 56V13 pump__get_total
+FS .11 59V13 pump__get_reservoir
+FS .12 62V13 pump__get_nozzle_state
+FS .13 65V13 pump__get_state
+FD 3 pump.adb
+FS .1 3K14 standard__pump -> 2.1
+FS .2 6U14 pump__set_state -> 2.2
+FS .3 12U14 pump__set_nozzle_state -> 2.3
+FS .4 18U14 pump__set_reservoir_size -> 2.4
+FS .5 24U14 pump__remove_reservoir -> 2.5
+FS .6 31U14 pump__set_fuel_amount -> 2.6
+FS .7 36U14 pump__set_reservoir -> 2.7
+FS .8 45U14 pump__set_price -> 2.8
+FS .9 52V13 pump__get_price -> 2.9
+FS .10 57V13 pump__get_total -> 2.10
+FS .11 62V13 pump__get_reservoir -> 2.11
+FS .12 67V13 pump__get_nozzle_state -> 2.12
+FS .13 72V13 pump__get_state -> 2.13
+FD 4 system.ads
+FS .1 37K9 system
+FS .2 77V13 system__Olt
+FS .3 78V13 system__Ole
+FS .4 79V13 system__Ogt
+FS .5 80V13 system__Oge
+FS .6 81V13 system__Oeq
+FX 1 io.ads .1 io
+F 8*14 io__print_float 3|.4:21s7 .8:48s7
+F 11*14 io__print_state 3|.2:9s7
+F 14*14 io__print_nozzle 3|.3:15s7
+F 17*14 io__print_fuel_types 3|.7:42s7
+FX 2 pump.ads .1 pump
+F 56*13 pump__get_total .5:41s18
+FX 2 pump.ads .2 pump__set_state
+F 31=24 pump__set_state__pump_num 3|.2:8m7
+F 31>48 pump__set_state__pumpstate 3|.2:8c29 9c53
+FX 2 pump.ads .3 pump__set_nozzle_state
+F 34=31 pump__set_nozzle_state__pump_num 3|.3:14m7
+F 34>54 pump__set_nozzle_state__nozzlestate 3|.3:14c35 15c56
+FX 2 pump.ads .4 pump__set_reservoir_size
+F 37=33 pump__set_reservoir_size__pump_num 3|.4:20m7
+F 37>56 pump__set_reservoir_size__size 3|.4:20c39 21c49
+FX 2 pump.ads .5 pump__remove_reservoir
+F 40=31 pump__remove_reservoir__pump_num 41r28 3|.5:26r10 27m10 27r43
+FX 2 pump.ads .6 pump__set_fuel_amount
+F 44=30 pump__set_fuel_amount__pump_num 3|.6:33m7
+F 44>53 pump__set_fuel_amount__amount 3|.6:33c31
+FX 2 pump.ads .7 pump__set_reservoir
+F 47=28 pump__set_reservoir__pump_num 3|.7:41m7
+F 47>51 pump__set_reservoir__fueltype 3|.7:39c25 42c43
+FX 2 pump.ads .8 pump__set_price
+F 50=24 pump__set_price__pump_num 3|.8:47m7
+F 50>47 pump__set_price__price 3|.8:47c28 48c42
+FX 2 pump.ads .9 pump__get_price
+F 53>23 pump__get_price__pump_num 3|.9:54c14
+FX 2 pump.ads .10 pump__get_total
+F 56>23 pump__get_total__pump_num 3|.10:59c14
+FX 2 pump.ads .11 pump__get_reservoir
+F 59>27 pump__get_reservoir__pump_num 3|.11:64c14
+FX 2 pump.ads .12 pump__get_nozzle_state
+F 62>30 pump__get_nozzle_state__pump_num 3|.12:69c14
+FX 2 pump.ads .13 pump__get_state
+F 65>23 pump__get_state__pump_num 3|.13:74c14
+FX 3 pump.adb .7 pump__set_reservoir
+F 37*7 pump__set_reservoir__r 39m7 40m7 41r32
+
+GG EK_REMOTE_STATES
+GG EK_GLOBALS pump KIND_PACKAGE_BODY ORIGIN_FLOW c:local_sub [ pump__get_price pump__get_reservoir pump__get_nozzle_state pump__get_state pump__get_total pump__set_state pump__set_nozzle_state pump__set_reservoir_size pump__remove_reservoir pump__set_fuel_amount pump__set_reservoir pump__set_price ]
+GG EK_GLOBALS pump__get_total KIND_SUBPROGRAM ORIGIN_FLOW c:local_var [ pump__get_total__pump_num ]
+GG EK_GLOBALS pump__get_state KIND_SUBPROGRAM ORIGIN_FLOW c:local_var [ pump__get_state__pump_num ]
+GG EK_GLOBALS pump__set_state KIND_SUBPROGRAM ORIGIN_FLOW c:calls [ io__print_state ] c:local_var [ pump__set_state__pumpstate pump__set_state__pump_num ]
+GG EK_GLOBALS pump__set_reservoir_size KIND_SUBPROGRAM ORIGIN_FLOW c:calls [ io__print_float ] c:local_var [ pump__set_reservoir_size__size pump__set_reservoir_size__pump_num ]
+GG EK_GLOBALS pump__set_fuel_amount KIND_SUBPROGRAM ORIGIN_FLOW c:local_var [ pump__set_fuel_amount__amount pump__set_fuel_amount__pump_num ]
+GG EK_GLOBALS pump__set_price KIND_SUBPROGRAM ORIGIN_FLOW c:calls [ io__print_float ] c:local_var [ pump__set_price__price pump__set_price__pump_num ]
+GG EK_GLOBALS pump__get_reservoir KIND_SUBPROGRAM ORIGIN_FLOW c:local_var [ pump__get_reservoir__pump_num ]
+GG EK_GLOBALS pump__set_nozzle_state KIND_SUBPROGRAM ORIGIN_FLOW c:calls [ io__print_nozzle ] c:local_var [ pump__set_nozzle_state__nozzlestate pump__set_nozzle_state__pump_num ]
+GG EK_GLOBALS pump__remove_reservoir KIND_SUBPROGRAM ORIGIN_FLOW c:calls_proof [ pump__get_total ] c:local_var [ pump__remove_reservoir__pump_num ]
+GG EK_GLOBALS pump__set_reservoir KIND_SUBPROGRAM ORIGIN_FLOW c:calls [ io__print_fuel_types ] c:local_var [ pump__set_reservoir__fueltype pump__set_reservoir__r pump__set_reservoir__pump_num ] c:local_init [ pump__set_reservoir__r ]
+GG EK_GLOBALS pump__get_price KIND_SUBPROGRAM ORIGIN_FLOW c:local_var [ pump__get_price__pump_num ]
+GG EK_GLOBALS pump__get_nozzle_state KIND_SUBPROGRAM ORIGIN_FLOW c:local_var [ pump__get_nozzle_state__pump_num ]
+GG EK_VOLATILES
+GG EK_TASKING_NONBLOCKING [ pump__get_price pump__get_reservoir pump__get_nozzle_state pump__get_state pump__get_total pump__set_state pump__set_nozzle_state pump__set_reservoir_size pump__remove_reservoir pump__set_fuel_amount pump__set_reservoir pump__set_price ]
+GG EK_TASKING_INFO pump__get_price
+GG EK_TASKING_INFO pump__get_reservoir
+GG EK_TASKING_INFO pump__get_nozzle_state
+GG EK_TASKING_INFO pump__get_state
+GG EK_TASKING_INFO pump__get_total
+GG EK_TASKING_INFO pump__set_state
+GG EK_TASKING_INFO pump__set_nozzle_state
+GG EK_TASKING_INFO pump__set_reservoir_size
+GG EK_TASKING_INFO pump__remove_reservoir
+GG EK_TASKING_INFO pump__set_fuel_amount
+GG EK_TASKING_INFO pump__set_reservoir
+GG EK_TASKING_INFO pump__set_price
+GG EK_END_MARKER

@@ -1,0 +1,240 @@
+{
+  "spark": [
+    {
+      "name": "unit.set_is_occupied",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 67
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.set_is_paid",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 73
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.set_pay",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 76
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.set_id",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 79
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.set_fuel_amount",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 82
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.set_current_state",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 85
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.set_nozzle_state",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 88
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.add_pump",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 91
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.lift_nozzle",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 96
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.replace_nozzle",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 104
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.start_pumping",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 114
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.stop_pumping",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 123
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.get_pump",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 37
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.get_total",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 40
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.get_id",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 43
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.get_pay",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 46
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.get_fuel_amount",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 49
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.get_fuel",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 52
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.is_occupied",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 55
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.is_paid",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 58
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.get_unit_state",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 61
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit.get_nozzle_state",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 64
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "unit",
+      "sloc": [
+        {
+          "file": "unit.ads",
+          "line": 3
+        }
+      ],
+      "spark": "spec"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+  ]
+}

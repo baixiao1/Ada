@@ -1,0 +1,23 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+D:\study\Master\2017Trimester 1\SWEN421\assignment 1\Ass1\ass1.gpr
+20170501024410
+[BOUND OBJECT FILES]
+D:\study\Master\2017Trimester 1\SWEN421\assignment 1\Ass1\IO.o
+D:\study\Master\2017Trimester 1\SWEN421\assignment 1\Ass1\pump.o
+D:\study\Master\2017Trimester 1\SWEN421\assignment 1\Ass1\unit.o
+D:\study\Master\2017Trimester 1\SWEN421\assignment 1\Ass1\cash_register.o
+D:\study\Master\2017Trimester 1\SWEN421\assignment 1\Ass1\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LD:\study\Master\2017Trimester 1\SWEN421\assignment 1\Ass1\
+-LD:\study\Master\2017Trimester 1\SWEN421\assignment 1\Ass1\
+-LE:/gnat/2016/lib/gcc/i686-pc-mingw32/4.9.4/adalib/
+-static
+-static-libgcc
+E:/gnat/2016/lib/gcc/i686-pc-mingw32/4.9.4/adalib/libgnat.a
+-Wl,--stack=0x2000000

@@ -1,0 +1,71 @@
+Summary of SPARK analysis
+=========================
+
+--------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   Interval   CodePeer     Provers   Justified   Unproved
+--------------------------------------------------------------------------------------------------------
+Data Dependencies                 .           .          .          .           .           .          .
+Flow Dependencies                 .           .          .          .           .           .          .
+Initialization                   16          16          .          .           .           .          .
+Non-Aliasing                      .           .          .          .           .           .          .
+Run-time Checks                   5           .          2          .    3 (CVC4)           .          .
+Assertions                        .           .          .          .           .           .          .
+Functional Contracts              1           .          .          .    1 (CVC4)           .          .
+LSP Verification                  .           .          .          .           .           .          .
+--------------------------------------------------------------------------------------------------------
+Total                            22    16 (73%)     2 (9%)          .     4 (18%)           .          .
+
+
+Analyzed 5 units
+in unit cash_register, 3 subprograms and packages out of 3 analyzed
+  cash_register at cash_register.ads:4 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  cash_register.payment at cash_register.ads:27 flow analyzed (0 errors and 0 warnings) and proved (3 checks)
+  cash_register.pump_info at cash_register.ads:33 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+in unit io, 0 subprograms and packages out of 7 analyzed
+  IO at io.ads:2 skipped
+  IO.print at io.ads:5 skipped
+  IO.print_boolean at io.ads:20 skipped
+  IO.print_float at io.ads:8 skipped
+  IO.print_fuel_types at io.ads:17 skipped
+  IO.print_nozzle at io.ads:14 skipped
+  IO.print_state at io.ads:11 skipped
+in unit main, 0 subprograms and packages out of 1 analyzed
+  main at main.adb:8 skipped
+in unit pump, 13 subprograms and packages out of 13 analyzed
+  pump at pump.ads:4 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  pump.get_nozzle_state at pump.ads:62 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  pump.get_price at pump.ads:53 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  pump.get_reservoir at pump.ads:59 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  pump.get_state at pump.ads:65 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  pump.get_total at pump.ads:56 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  pump.remove_reservoir at pump.ads:40 flow analyzed (0 errors and 0 warnings) and proved (3 checks)
+  pump.set_fuel_amount at pump.ads:44 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  pump.set_nozzle_state at pump.ads:34 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  pump.set_price at pump.ads:50 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  pump.set_reservoir at pump.ads:47 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  pump.set_reservoir_size at pump.ads:37 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  pump.set_state at pump.ads:31 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+in unit unit, 0 subprograms and packages out of 23 analyzed
+  unit at unit.ads:3 skipped
+  unit.add_pump at unit.ads:91 skipped
+  unit.get_fuel at unit.ads:52 skipped
+  unit.get_fuel_amount at unit.ads:49 skipped
+  unit.get_id at unit.ads:43 skipped
+  unit.get_nozzle_state at unit.ads:64 skipped
+  unit.get_pay at unit.ads:46 skipped
+  unit.get_pump at unit.ads:37 skipped
+  unit.get_total at unit.ads:40 skipped
+  unit.get_unit_state at unit.ads:61 skipped
+  unit.is_occupied at unit.ads:55 skipped
+  unit.is_paid at unit.ads:58 skipped
+  unit.lift_nozzle at unit.ads:96 skipped
+  unit.replace_nozzle at unit.ads:104 skipped
+  unit.set_current_state at unit.ads:85 skipped
+  unit.set_fuel_amount at unit.ads:82 skipped
+  unit.set_id at unit.ads:79 skipped
+  unit.set_is_occupied at unit.ads:67 skipped
+  unit.set_is_paid at unit.ads:73 skipped
+  unit.set_nozzle_state at unit.ads:88 skipped
+  unit.set_pay at unit.ads:76 skipped
+  unit.start_pumping at unit.ads:114 skipped
+  unit.stop_pumping at unit.ads:123 skipped

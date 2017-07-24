@@ -1,0 +1,127 @@
+V "GNAT Lib v2016"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		09a6094c NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W cash_register%s	cash_register.adb	cash_register.ali
+W io%s			io.adb			io.ali
+W pump%s		pump.adb		pump.ali
+W unit%s		unit.adb		unit.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-inteio.ads		20160516092932 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-tiinio.ads		20160516092928 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D cash_register.ads	20170502004238 5a7d7586 cash_register%s
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D io.ads		20170503234926 70b6a2e6 io%s
+D main.adb		20170502005718 f789808a main%b
+D pump.ads		20170502004922 635786ce pump%s
+D system.ads		20160516092930 2da59038 system%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+D unit.ads		20170502002154 7995a418 unit%s
+X 1 ada.ads
+16K9*Ada 19e8 14|5r6 5r23 6r6 6r32
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 14|6w10 6r36
+X 7 a-textio.ads
+49K13*Text_IO 471e16 14|5w10 5r27
+166U14*New_Line 14|80s7 84s7
+240U14*Get 14|98s7 102s10
+242U14*Put 14|97s7 101s10 105s13
+X 8 a-tiinio.ads
+56U14*Get 14|106s13[3|18]
+X 10 cash_register.ads
+4K9*cash_register 36e18 14|3w6 83r7 88r7
+27U14*payment 14|88s21
+33U14*pump_info 14|83s21
+X 13 io.ads
+2K9*IO 22e7 14|4w6 4r14
+5U14*print 14|72s7 77s7 82s7 86s7 90s7 93s7 95s10 100s10 104s13 122s16
+X 14 main.adb
+8U11*main 8b11 127l5 127t9
+14r4 unit1{28|15R9} 60m16 60r16 61m18 61r18 62m18 62r18 63m18 63r18 66r28
+. 67r28 68r32 75m24 75r24 78m26 78r26 79m27 79r27 83r31 88m29 88r29 94r27
+. 99r35 99r63 109m36 109r36 110m38 110r38 111m39 111r39 113m36 113r36 114m38
+. 114r38 115m39 115r39 117m36 117r36 118m38 118r38 119m39 119r39
+17r4 unit1_91{15|17R9} 61m25 61r25 66m4 109m42 109r42 110m44 110r44 111m45
+. 111r45
+18r4 unit1_95{15|17R9} 62m25 62r25 67m4 75m31 75r31 78m32 78r32 79m33 79r33
+. 88m35 88r35 113m42 113r42 114m44 114r44 115m45 115r45
+19r4 unit1_Diesel{15|17R9} 63m25 63r25 68m4 117m42 117r42 118m44 118r44 119m45
+. 119r45
+22e4 F91{15|7E9} 55m4 61r34 66r34 109r51
+23e4 F95{15|7E9} 56m4 62r34 67r34 75r40 113r51
+24e4 Diesel{15|7E9} 57m4 63r38 68r38 117r55
+27i4 U_F91{integer} 55r30
+28i4 U_F95{integer} 56r30
+29i4 U_Diesel{integer} 57r33
+32i4 Base{integer}
+33i4 Ready{integer}
+34i4 Pumping{integer}
+35i4 Waiting{integer}
+38i4 Initial{integer}
+39i4 Left{integer}
+40i4 Replace{integer}
+41i4 Start{integer}
+42i4 Stop{integer}
+43i4 Pay{integer}
+45f4 car_space{15|6F9} 73m7 78m56 78r56 110m85 110r85 114m85 114r85 118m89
+. 118r89
+46f4 amount_to_fill{15|6F9} 74m7 78r41
+47b4 isTest{boolean} 70m4 71r7
+49a4 input_unit{string} 98m11 99r10
+50a4 input_fuel_types{string} 102m14 103r13 103r41 103r69 108r19 112r22 116r22
+51i4 input_amount{integer} 106m17 107r16 110r71 114r71 118r75
+X 15 pump.ads
+4K9*pump 14|1w6 9r17 10r17 11r17 17r14 18r14 19r18 22r9 23r9 24r12 45r15
+. 46r20 55r10 56r10 57r13 110r53 114r53 118r57 15|70e9
+6F9*float_number<short_float> 14|11r22 45r20 46r25 110r58 114r58 118r62
+7E9*fuel_types 14|10r22 22r14 23r14 24r17 55r15 56r15 57r18 15|7e39
+8E9*state 14|9r22 15|8e49
+17R9*pump 14|17r19 18r19 19r23 15|24e14
+X 28 unit.ads
+3K9*unit 14|2w6 14r12 60r4 61r4 62r4 63r4 66r14 67r14 68r18 75r7 78r7 79r7
+. 94r10 99r23 99r46 109r19 110r19 111r19 113r19 114r19 115r19 117r19 118r19
+. 119r19 28|132e9
+10A12*unit_id{string}<integer>
+15R9*pump_unit 14|14r17 28|27e14
+37V13*get_pump{15|17R9} 14|66s19 67s19 68s23
+43V13*get_id{10A12} 14|99s28
+55V13*is_occupied{boolean} 14|94s15 99s51
+79U14*set_id 14|60s9
+91U14*add_pump 14|61s9 62s9 63s9
+96U14*lift_nozzle 14|75s12 109s24 113s24 117s24
+104U14*replace_nozzle 14|79s12 111s24 115s24 119s24
+114U14*start_pumping 14|78s12 110s24 114s24 118s24
+

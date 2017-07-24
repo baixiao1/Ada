@@ -1,0 +1,897 @@
+{
+  "spark": [
+    {
+      "name": "pump.set_state",
+      "sloc": [
+        {
+          "file": "pump.ads",
+          "line": 31
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pump.set_nozzle_state",
+      "sloc": [
+        {
+          "file": "pump.ads",
+          "line": 34
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pump.set_reservoir_size",
+      "sloc": [
+        {
+          "file": "pump.ads",
+          "line": 37
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pump.remove_reservoir",
+      "sloc": [
+        {
+          "file": "pump.ads",
+          "line": 40
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pump.set_fuel_amount",
+      "sloc": [
+        {
+          "file": "pump.ads",
+          "line": 44
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pump.set_reservoir",
+      "sloc": [
+        {
+          "file": "pump.ads",
+          "line": 47
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pump.set_price",
+      "sloc": [
+        {
+          "file": "pump.ads",
+          "line": 50
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pump.get_price",
+      "sloc": [
+        {
+          "file": "pump.ads",
+          "line": 53
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pump.get_total",
+      "sloc": [
+        {
+          "file": "pump.ads",
+          "line": 56
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pump.get_reservoir",
+      "sloc": [
+        {
+          "file": "pump.ads",
+          "line": 59
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pump.get_nozzle_state",
+      "sloc": [
+        {
+          "file": "pump.ads",
+          "line": 62
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pump.get_state",
+      "sloc": [
+        {
+          "file": "pump.ads",
+          "line": 65
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pump",
+      "sloc": [
+        {
+          "file": "pump.ads",
+          "line": 4
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "pump.adb",
+      "line": 41,
+      "col": 32,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pump.set_reservoir",
+        "sloc": [
+          {
+            "file": "pump.ads",
+            "line": 47
+          }
+        ]
+      },
+      "tracefile": "pump__flow__324.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pump.adb",
+      "line": 41,
+      "col": 32,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pump.set_reservoir",
+        "sloc": [
+          {
+            "file": "pump.ads",
+            "line": 47
+          }
+        ]
+      },
+      "tracefile": "pump__flow__324.trace",
+      "how_proved": "flow"
+    }
+  ],
+  "proof": [
+    {
+      "file": "pump.adb",
+      "line": 27,
+      "col": 72,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pump.remove_reservoir",
+        "sloc": [
+          {
+            "file": "pump.ads",
+            "line": 40
+          }
+        ]
+      },
+      "how_proved": "interval"
+    },
+    {
+      "file": "pump.ads",
+      "line": 41,
+      "col": 17,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "pump.remove_reservoir",
+        "sloc": [
+          {
+            "file": "pump.ads",
+            "line": 40
+          }
+        ]
+      },
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "pump.adb",
+      "line": 27,
+      "col": 72,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pump.remove_reservoir",
+        "sloc": [
+          {
+            "file": "pump.ads",
+            "line": 40
+          }
+        ]
+      },
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pump",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pump.get_nozzle_state",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 62
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pump.get_nozzle_state",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 62
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pump.get_total",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 56
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pump.get_total",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 56
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "IO.print_state",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pump.set_state",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 31
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pump.get_state",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 65
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "IO.print_state",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "IO.print_state",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pump.set_state",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 31
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pump.get_state",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 65
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "IO.print_nozzle",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 14
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pump.set_nozzle_state",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 34
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "IO.print_nozzle",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 14
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "IO.print_nozzle",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 14
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pump.set_nozzle_state",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 34
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "IO.print_float",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 8
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pump.set_reservoir_size",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 37
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pump.get_total",
+            "sloc": [
+              {
+                "file": "pump.ads",
+                "line": 56
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "pump.get_total",
+            "sloc": [
+              {
+                "file": "pump.ads",
+                "line": 56
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "pump.remove_reservoir",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 40
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "IO.print_float",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 8
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "IO.print_float",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 8
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pump.set_reservoir_size",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 37
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pump.get_total",
+            "sloc": [
+              {
+                "file": "pump.ads",
+                "line": 56
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pump.remove_reservoir",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 40
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pump.get_total",
+            "sloc": [
+              {
+                "file": "pump.ads",
+                "line": 56
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "pump.get_total",
+            "sloc": [
+              {
+                "file": "pump.ads",
+                "line": 56
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pump.remove_reservoir",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 40
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pump.get_reservoir",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 59
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pump.get_reservoir",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 59
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pump.set_fuel_amount",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 44
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pump.set_fuel_amount",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 44
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "IO.print_fuel_types",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 17
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pump.set_reservoir",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 47
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "IO.print_fuel_types",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "IO.print_fuel_types",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 17
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pump.set_reservoir",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 47
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "IO.print_float",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 8
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pump.set_price",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 50
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "IO.print_float",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 8
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "IO.print_float",
+            "sloc": [
+              {
+                "file": "io.ads",
+                "line": 8
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pump.set_price",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 50
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pump.get_price",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 53
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pump.get_price",
+          "sloc": [
+            {
+              "file": "pump.ads",
+              "line": 53
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
